@@ -4,7 +4,8 @@
   "description": "Practicing Weather app using HTML CSS Bootstrap Javascript Node js Express js withHandlebars",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
   },
   "author": "Shamoon Ashraf",
   "license": "ISC",
