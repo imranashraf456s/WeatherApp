@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+
+    <title>Weather Info </title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+
+   {{>bodyHeader}}
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 offset-md-2">
+            <div class="header-text caption">
+              <h2>Enter Your City Name</h2>
+              <div id="search-section">
+              	<form id="suggestion_form" name="gs" >
+                <div class="searchText">
+                  <input type="text" name="q" id="formData" class="searchText" placeholder="Enter your city name here..." autocomplete="off">
+                </div>
+                    <input type="submit" name="results" id = "btnSubmit" class="main-button" value="Search Now">
+                 </form>
+                 
+               </div>
+               
+              </div>
+              
+            </div>
+            
+          </div>
+
+          <div class="textContainer" style="color: blanchedalmond; background-color: transparent; align-items: center; font-size: 40px; font-weight: bold; ">
+            <div class="dateBar" style="align-items: center; margin: 10px;">
+              <p class="day" id="day" style="color: rgb(170, 170, 170); font-size: 30px;">  </p> <span id="date"> </span>
+            </div>
+            <div class="weatherInfo" style="align-items: center;  margin: 10px;;">
+              <p id="cityName" style="color: rgb(170, 170, 170); font-size: 30px; margin: 10px;"></p>
+              <p class="temperature" id="temperature" style="color: rgb(170, 170, 170); font-size: 30px; margin: 10px;"></p>
+            </div>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+    <!-- Banner Ends Here -->    
+
+    {{>footer}}
+
+  </body>
+</html>
